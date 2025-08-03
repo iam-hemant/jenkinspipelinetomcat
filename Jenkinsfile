@@ -8,7 +8,8 @@ stages{
 stage('clone Repo')
   {
     steps{
-       git 'https://github.com/iam-hemant/jenkinspipelinetomcat.git'     
+       git branch: 'main', url: 'https://github.com/iam-hemant/jenkinspipelinetomcat.git'
+     
     }
   }
 stage('Build Code')
